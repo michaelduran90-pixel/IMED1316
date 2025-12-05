@@ -16,7 +16,76 @@
 
     <style>
       h1 {
-        display: none;
+        /* --- Moon Website Theme --- */
+body {
+  background: radial-gradient(circle at 50% 20%, #2e2e38, #0a0a14);
+  color: #e6e6f0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Table Wrapper (optional) */
+.content-table {
+  width: 100%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(20, 20, 30, 0.7);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(200, 200, 255, 0.15);
+}
+
+/* Header Styling */
+.content-table thead th {
+  background: linear-gradient(90deg, #1b1b27, #2a2a39);
+  color: #f5f5ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 12px;
+  font-size: 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Table Rows */
+.content-table tbody td {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e0e0f2;
+  font-size: 0.95rem;
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+/* Alternating Row Glow */
+.content-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Hover Effect: Soft Moon Glow */
+.content-table tbody tr:hover {
+  background: rgba(180, 180, 255, 0.12);
+  box-shadow: inset 0 0 8px rgba(200, 200, 255, 0.3);
+  transition: 0.2s ease-in-out;
+}
+
+/* Times Column Highlight */
+.content-table tbody td:first-child {
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Rounded Corner Trick */
+.content-table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+.content-table thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
       }
     </style>
   </head>
@@ -53,85 +122,86 @@
           <table class="content-table">
             <thead>
               <tr>
-                <th>Times</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
+                <th scope="col">Times</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
               </tr>
             </thead>
-
+          
             <tbody>
               <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
+                <td><strong>5:00 AM – 6:00 AM</strong><br>Pre-Dawn Observation</td>
+                <td>Crater sketching with Dr. Lin at Silver Ridge Point</td>
+                <td>Blue-hour moon fading session, Lake Serenitas</td>
+                <td>Morning waning crescent watch, Mount Halcyon</td>
+                <td>Pre-dawn lunar photography with Asha Kumar</td>
+                <td>Quiet crescent meditation, Aurora Bluff</td>
+                <td>Sunrise over the Moon workshop, Horizon Bay</td>
+                <td>Solo pre-dawn reflection at Whispering Dunes</td>
               </tr>
-
+          
               <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
+                <td><strong>7:00 PM – 8:00 PM</strong><br>Golden Hour Meetup</td>
+                <td>Lunar orientation class, Observatory Deck A</td>
+                <td>Moonrise timing workshop with Mateo Cruz</td>
+                <td>“First Light” talk, Crescent Valley</td>
+                <td>Guided telescope setup, Starlight Plaza</td>
+                <td>Evening moonrise viewing, Ocean Cliffside</td>
+                <td>Beginner stargazing circle, Willow Rest Field</td>
+                <td>Moon & tides mini-seminar, Coral Crest</td>
               </tr>
-
+          
               <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
+                <td><strong>8:00 PM – 9:00 PM</strong><br>Observation Hour</td>
+                <td>Main crater tour with the North Lens Group</td>
+                <td>Terminator line study, Summit View Camp</td>
+                <td>Lunar features deep dive w/ Mira Chen</td>
+                <td>“Seas of the Moon” mapping session</td>
+                <td>Group viewing at Echo Mesa Lookout</td>
+                <td>Night-scope practice with Rafi El-Sayed</td>
+                <td>Quiet observation hour, Twilight Point</td>
               </tr>
-
+          
               <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
+                <td><strong>9:00 PM – 10:00 PM</strong><br>Workshops & Talks</td>
+                <td>Lunar geology basics, Hall of Orbits</td>
+                <td>Moon and mythology storytelling</td>
+                <td>Telescope calibration with Helena Rhodes</td>
+                <td>Workshop: “How to photograph the Moon”</td>
+                <td>Guest lecture from Lowell Ridge Observatory</td>
+                <td>Night sky journaling circle</td>
+                <td>Community Q&A with local astronomers</td>
               </tr>
-
+          
               <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
+                <td><strong>10:00 PM – 11:00 PM</strong><br>Late-Night Viewing</td>
+                <td>High-detail surface viewing session</td>
+                <td>Shadow-play studies around the Apennine Range</td>
+                <td>Lunar mare contrast observation</td>
+                <td>Viewing from Frostlight Canyon Vista</td>
+                <td>Full Moon peak brightness (when applicable)</td>
+                <td>Advanced crater mapping with Zora Patel</td>
+                <td>Open telescope time for all visitors</td>
               </tr>
-
+          
               <tr>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
-                <td>data</td>
+                <td><strong>11:00 PM – 12:00 AM</strong><br>Reflection & Review</td>
+                <td>Night log writing + warm tea</td>
+                <td>Community discussion at Beacon Shelter</td>
+                <td>Guided reflection with Orion Circle Club</td>
+                <td>Stargazer lounge open session</td>
+                <td>“End of Week Review” with staff astronomers</td>
+                <td>Campfire stories under the nearly dark sky</td>
+                <td>Quiet sky meditation at Luna Terrace</td>
               </tr>
             </tbody>
           </table>
+          
 
           <div class="wrapper-content">
 
